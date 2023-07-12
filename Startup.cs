@@ -26,14 +26,6 @@ namespace MyCourse
                 app.UseDeveloperExceptionPage();
             }
 
-
-            //app.UseMvcWithDefaultRoute();
-            // app.UseMvc(routeBuilder =>
-            // {
-            //     //                                    /courses/detail/5
-            //     routeBuilder.MapRoute("default", "{controller}/{action}/id");
-            // });
-
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

@@ -10,7 +10,7 @@ namespace MyCourse.Controllers
     {
         public IActionResult Index()
         {
-            return Content("Sono le index della home");
+            return View();
         }
     }
 }
