@@ -1,7 +1,7 @@
 {
    "browserSync.config": {
     "proxy":"localhost:5000",
-    "files": ["Views/**/*.cshtml","wwwroot/**/*"]
+    "files": ["bin/reload.txt","Views/**/*.cshtml","wwwroot/**/*"]
    }
 }
    
