@@ -16231,6 +16231,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\simys\\MyCourse\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\simys\\MyCourse\\Views\\Courses\\Index.cshtml",
       "TargetPath": "Views\\Courses\\Index.cshtml",
       "FileKind": "mvc"
