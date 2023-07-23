@@ -1,31 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\simys\\MyCourse\\MyCourse.csproj": {}
+    "C:\\Users\\Fabiana\\Documents\\Pilapone\\MyCourse\\MyCourse\\MyCourse.csproj": {}
   },
   "projects": {
-    "C:\\Users\\simys\\MyCourse\\MyCourse.csproj": {
+    "C:\\Users\\Fabiana\\Documents\\Pilapone\\MyCourse\\MyCourse\\MyCourse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\simys\\MyCourse\\MyCourse.csproj",
+        "projectUniqueName": "C:\\Users\\Fabiana\\Documents\\Pilapone\\MyCourse\\MyCourse\\MyCourse.csproj",
         "projectName": "MyCourse",
-        "projectPath": "C:\\Users\\simys\\MyCourse\\MyCourse.csproj",
-        "packagesPath": "C:\\Users\\simys\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\simys\\MyCourse\\obj\\",
+        "projectPath": "C:\\Users\\Fabiana\\Documents\\Pilapone\\MyCourse\\MyCourse\\MyCourse.csproj",
+        "packagesPath": "C:\\Users\\Fabiana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fabiana\\Documents\\Pilapone\\MyCourse\\MyCourse\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\simys\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Fabiana\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -62,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     }

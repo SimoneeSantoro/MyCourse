@@ -1,19 +1,30 @@
+@model List<CourseViewModel>
 <h1>Catalogo dei corsi</h1>
 
-@for(int i=0; i<10; i++)
+@foreach(CourseViewModel course in Model)
 {
     <div class="row">
-        <div class="col-md-1"><img src="~/logo.svg" width="52" height="52"></div>
-        <div class="col-md-5"><h2>Titolo del corso</h2><author>di Nome Autore</author></div>
+        <div class="col-md-1"><img src="@course.imagePath" width="52" height="52"></div>
+        <div class="col-md-5"><h2>@course.title</h2><author>@course.author</author></div>
         <div class="col-md-2 rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+            @for(int i=1; i<=5; i++)
+            {
+                if(course.rating >=i)
+                {
+                    <i class="fas fa-star"></i>
+                }
+                else if (course.rating >i-1)
+                {
+                    <i class="fas fa-star-half-alt"></i>
+                }
+                else
+                {
+                    <i class="far fa-star"></i>
+                }
+            }
         </div>
-        <div class="col-md-2 price">EUR 10,99<br /><s>EUR 12,99</s></div>
-        <div class="col-md-2 d-flex align-items-center"><a  class="btn btn-outline-primary" asp-action="Detail" asp-route-id="5">Dettaglio corso 5</a></div>
+        <div class="col-md-2 price">EUR @course.currentPrice<br /><s>EUR @course.fullPrice</s></div>
+        <div class="col-md-2 d-flex align-items-center"><a  class="btn btn-outline-primary" asp-action="Detail" asp-route-id="@course.idCourse">Dettaglio</a></div>
     </div>
 }
 
