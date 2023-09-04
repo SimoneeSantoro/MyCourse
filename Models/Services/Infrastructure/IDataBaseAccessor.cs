@@ -8,6 +8,6 @@ namespace MyCourse.Models.Services.Infrastructure
 {
     public interface IDataBaseAccessor
     {
-        DataSet Query(string query);
+        Task<DataSet> QueryAsync(FormattableString query);
     }
 }

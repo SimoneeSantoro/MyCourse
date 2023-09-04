@@ -15,15 +15,35 @@ namespace MyCourse.Models.Services.Application
         {
             this.dataBaseAccessor = dataBaseAccessor;
         }
-        public CourseDetailViewModel GetCourse(int id)
+        public async Task<CourseDetailViewModel> GetCourseAsync(int id)
         {
-            throw new NotImplementedException();
+            FormattableString query = $"SELECT * FROM Courses WHERE Id = {id}; SELECT Id, Title, Description, Duration FROM Lessons WHERE CourseId = {id}";
+            DataSet dataSet = await dataBaseAccessor.QueryAsync(query);
+
+            //Course
+            var courseTable = dataSet.Tables[0];
+            if(courseTable.Rows.Count != 1)
+            {
+                throw new InvalidOperationException($"Did not return exactly 1 row for Course {id}");
+            }
+            var courseRow = courseTable.Rows[0];
+            var courseDetailViewModel = CourseDetailViewModel.FromDataRow(courseRow);
+
+            //Course Lessons
+            var lessonDataTable = dataSet.Tables[1];
+
+            foreach(DataRow lessonRow in lessonDataTable.Rows)
+            {
+                LessonViewModel lessonViewModel = LessonViewModel.FromDataRow(lessonRow);
+                courseDetailViewModel.Lessons.Add(lessonViewModel);
+            }
+            return courseDetailViewModel;
         }
 
-        public List<CourseViewModel> GetCourses()
+        public async Task<List<CourseViewModel>> GetCoursesAsync()
         {
-            string query = "SELECT Id, Title, ImagePath, Author, Rating, FullPrice_Amount, FullPrice_Currency, CurrentPrice_Amount, CurrentPrice_Currency FROM Courses";
-            DataSet dataSet = dataBaseAccessor.Query(query);
+            FormattableString query = $"SELECT Id, Title, ImagePath, Author, Rating, FullPrice_Amount, FullPrice_Currency, CurrentPrice_Amount, CurrentPrice_Currency FROM Courses";
+            DataSet dataSet = await dataBaseAccessor.QueryAsync(query);
             var dataTable = dataSet.Tables[0];
             var courseList = new List<CourseViewModel>();
             foreach(DataRow courseRow in dataTable.Rows)

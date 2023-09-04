@@ -139,3 +139,15 @@ C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\bin\De
 C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\obj\Debug\netcoreapp3.1\MyCourse.Views.pdb
 C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\obj\Debug\netcoreapp3.1\MyCourse.csproj.CopyComplete
 C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\obj\Debug\netcoreapp3.1\MyCourse.genruntimeconfig.cache
+C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\bin\Debug\netcoreapp3.1\Remotion.Linq.dll
+C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_green.dll
+C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\bin\Debug\netcoreapp3.1\runtimes\win8-arm\native\e_sqlite3.dll
+C:\Users\simys\OneDrive\Documenti\Programming\Corso_Udemy_WebApp\MyCourse\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
